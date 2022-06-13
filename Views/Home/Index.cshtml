@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/Style.css">
+<div class="text-center">
+    <div class="options row">
+        <div class="col-md-6">
+            <select class="form-control" id="place" onchange="drawChart()">
+                <option value="1" selected>Datos de Estados Unidos</option>
+                <option value="2">Datos de Alabama</option>
+                <option value="3">Datos de Idaho</option>
+                <option value="4">Datos de Minnesota</option>
+
+            </select>
+        </div>
+        <div class="col-md-6">
+            <select id="graphs" class="form-control" onchange="drawChart()">
+                <option value="BarChart"selected>Mostrar datos en tabla</option>
+                <option value="PieChart" >Mostrar datos en circulos</option>
+            </select>
+        </div>
+        </div>
+        <div id="piechart">
+        </div>
+        <div id="loader" class="skeleton-container">
+          
+        </div>
+    </div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="~/js/JavaScript.js"></script>
+
