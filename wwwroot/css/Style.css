@@ -1,10 +1,28 @@
-﻿.text-center {
+﻿body{
+   height: 85vh
+}
+.text-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
-
+h1, a, option, button, select, text {
+    font-family: rubik;
+    color: #00A850 !important;
+    fill: #00A850 !important;
+}
+h1 {
+    margin-bottom: 30px !important;
+}
+select {
+    border: 2px solid #00A850 !important;
+    cursor: pointer;
+}
+select:hover {
+    border: 2px solid #00A8502E !important;
+    }
 rect {
     transition: 2s;
     background: red !important;

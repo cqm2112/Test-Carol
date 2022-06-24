@@ -11,5 +11,7 @@ namespace Test_Carol.Models
         public string totalTestResults { get; set; }
         public string hospitalizedCumulative { get; set; }
         public string death { get; set; }
+
+        public string probableCases { get; set; }
     }
 }
